@@ -1,20 +1,20 @@
-export default function generateTypedAuth(challenge) {
+export default function generateTypedAuth(nonce) {
     const domain = {
-        name: "web3 game",
+        name: "Legions of Oasis",
         version: '1',
-        chainId: 4,
+        chainId: 31337,
     }
 
     const types = {
         Challenge: [
-            { name: 'challenge', type: 'string' },
-            { name: 'website', type: 'string' }
+            { name: 'nonce', type: 'string' },
+            { name: 'uri', type: 'string' }
         ]
     }
 
     const value = {
-        "website": 'web3-game-nutlcoud.vercel.app',
-        challenge
+        "uri": 'legionsofoasis.xyz',
+        nonce
     }
 
     return {
