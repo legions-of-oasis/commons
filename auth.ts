@@ -1,4 +1,4 @@
-export default function generateTypedAuth(nonce) {
+export default function generateTypedAuth(nonce: string) {
     const domain = {
         name: "Legions of Oasis",
         version: '1',
