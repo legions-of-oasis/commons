@@ -2,7 +2,7 @@ export default function generateTypedAuth(nonce: string) {
     const domain = {
         name: "Legions of Oasis",
         version: '1',
-        chainId: 31337,
+        chainId: 4,
     }
 
     const types = {
